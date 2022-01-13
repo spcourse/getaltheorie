@@ -10,7 +10,7 @@ Write a program called `listprimes.py` that asks the user to provide a number $$
 
 * Ask the user to provide a number. This has to be a whole number bigger than 2. If a user provides a value that is not valid, ask the user to try again (you may assume the user gives a whole number as input, not a decimal or word).
 
-* Generate a list with all prime numbers $$p$$, $$2 \leq p<n$$, in ascending order. (You are required to use a list for this exercise.)
+* Generate a list with all prime numbers $$p  $$, $$ 2 \leq p < n $$, in ascending order. (You are required to use a list for this exercise.)
 
 * Print the list.
 

@@ -1,19 +1,19 @@
 name: numbers
 content:
 
-    Introduction: .
+    Introduction: /numbers/
     Getting started:
         Basic elements of Python: /python/en/basics
-        Program the computer to be a Number Whiz: whiz
+        Program the computer to be a Number Whiz: /numbers/whiz
     Leap:
         Learn about algorithms: /python/en/algorithms
         Learn about loops: /python/en/loops
-        Find leap-years: leap
-        Find birthdays of leap-year babies: birthday
+        Find leap-years: /numbers/leap
+        Find birthdays of leap-year babies: /numbers/birthday
     Prime numbers:
-        Look for prime numbers: primes
+        Look for prime numbers: /numbers/primes
         Learn about storing data in lists: /python/en/lists
-        Make lists of prime numbers: primelist
+        Make lists of prime numbers: /numbers/primelist
     Number theory:
         Understand how to write good code: /python/en/style
-        Try to (dis)prove Goldbach's conjecture: goldbach
+        Try to (dis)prove Goldbach's conjecture: /numbers/goldbach
