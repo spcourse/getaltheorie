@@ -1,9 +1,9 @@
-# The thousandth prime
+# Thousand and one primes
 
-The first prime number is 2, the third prime number is 5, the 1000nd prime number is 7919. Implement a program that generates the $$n$$-th prime number, where $$n$$ is a user provided value.
+The first prime number is 2, the third prime number is 5, the 1001st prime number is 7927. Implement a program called `1001-primes.py`, that generates the $$n$$-th prime number, where $$n$$ is a user provided value.
 
-    Which prime number are you looking for? 1000
-    7919
+    Which prime number are you looking for? 1001
+    7927
 
 ## Background
 
@@ -19,14 +19,13 @@ As previously mentioned, a computer is a great tool for quickly executing a seri
 
 * Once the rank of the prime is established, have your program calculate the correct prime and report it back to the user.
 
-* Make sure that your program does not output anything other and the prime number, just like in the examples at the start!
+* Make sure that your program does not output anything other and the prime number, just like in the example above!
 
 ### Constraints
 
 The same as before:
 
 * You are only allowed to use the concepts that are discussed in this module.
-For an overview of those concepts have a look [here](/python/en/overview). Note that this doesn't include lists! You'll learn about those after this exercise.
 * You are *not* allowed to use the `break`-statement.
 * You are *not* allowed to use the `import`-statement.
 
@@ -34,28 +33,11 @@ For an overview of those concepts have a look [here](/python/en/overview). Note 
 
 As always, take a couple of minutes of time, before any coding, to draw the problem with **pen and paper**. How would you divide the problem into smaller and simpler steps.
 
-In this assignment, for one last time we'll guide you through some of the steps.
+In this assignment, we'll guide you through some of the steps.
 
-## Step 1: prime-check
+## Step 1: use previous solutions.
 
-An important part of the description above is the fact that it's about prime numbers. What is a prime number? We'll have to express that concept in Python.
-
-So it is key to first write a program that can determine whether a particular number is a prime or not. At the end of the program it should be clear, through display on the screen, if the number is a prime or not. It starts with the variable `number`, in which we store the number that must be investigated:
-
-    number = input("Enter a number: ")
-    number = int(number)
-    # TODO: this is where your code goes
-
-If the user enters the number 37, at the end of the program the following statement should be printed:
-
-    The number 37 is a prime number
-
-In the case of a non prime number, such as 36, it should print:
-
-    The number 36 is not a prime number
-
-At the start, keep it simple. Use a `for`-loop and `%` (modulo) to determine how many numbers are a divisor of `number`. If you keep track of this in the loop (count!), then by the end of the loop you can determine if a number is prime or not. Ultimately print the conclusion, like in the example above.
-
+You're not starting from scratch, beacause you already wrote `check-prime.py`. Copy that solution as a starting point for this problem.
 
 ## Step 2: check all numbers smaller than 100
 
@@ -79,23 +61,6 @@ Now let's get back to the assignment: finding the n-th prime number. We'll assis
 
 > Maybe it is weird or annoying to write a program, after which you find out that it doesn't work correctly. That is a programmers fate: it's just incredibly difficult to precisely formulate an algorithm and instantly convert it into functioning code. Sometimes you've forgotten an exception or edge case, but just as easily you've made a typo somewhere. Keep in mind even the best programmers have to deal with this!
 
-## Step 4: does it really work?
-
-Once again carefully read the specification at the top of the assignment and make sure your program works exactly as specified.
-
-Then you're all set to test:
-
-  checkpy prime
-
-## Step 5: small optimizations
-
-We started out as simple as possible, to get to a *correct* program as soon as possible (checked by `checkpy`). But through some mathematical insight we could do some small optimizations, increasing the speed of the program.
-
-* Except for 2, *even* numbers are never a prime number (this should only be a small adjustment to your code).
-
-* If you find a divisor (that is not 1 or the number itself), there is no reason to look for any other divisors, it is already certain that number is not a prime.
-
-
 ## Hints
 
 * You only need the Python elements you've learned up until now to correctly implement this program!
@@ -104,4 +69,4 @@ We started out as simple as possible, to get to a *correct* program as soon as p
 
 To be sure test your program again using `checkpy`:
 
-    checkpy prime
+    checkpy 1001-primes
